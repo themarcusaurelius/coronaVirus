@@ -2,103 +2,94 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios')
 const client = require('../../elasticsearch/connection');
-const URL = `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson`;
+const URL = `https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Confirmed%20desc%2CCountry_Region%20asc%2CProvince_State%20asc&resultOffset=0&resultRecordCount=250&cacheHint=true`;
 
- //======= Check that Elasticsearch is up and running =======\\
-function pingElasticsearch() {
-    client.ping({
-        requestTimeout: 30000,
-      }, function(error,res) {
-        if (error) {
-            console.error('elasticsearch cluster is down!');
-        } else {
-            console.log('Elasticsearch Ready');
+router.get('/virus', function (req, res) {
+    res.send('Running Application...');
+    console.log('Loading Application...')
+
+    setInterval(() => { 
+        //======= Check that Elasticsearch is up and running =======\\
+        pingElasticsearch = async () => {
+            await client.ping({
+                requestTimeout: 30000,
+            }, function(error,res) {
+                if (error) {
+                    console.error('elasticsearch cluster is down!');
+                } else {
+                    console.log('Elasticsearch Ready');
+                }
+            });
         }
-    });
-};
-
-// ====== Get Data From USGS and then index into Elasticsearch
-indexAllDocs = async () => {
-    try {
-
-        const EARTHQUAKES = await axios.get(`${URL}`,{
-            headers: {
-                'Content-Type': [
-                    'application/json',  
-                    'charset=utf-8' 
-                ]
-            }
-        });
 
         console.log('Getting Data From Host')
 
-        results = EARTHQUAKES.data.features
+        // ====== Get Data From USGS and then index into Elasticsearch ====== \\
+        indexAllDocs = async () => {
+            try {
+                const VIRUS = await axios.get(`${URL}`,{
+                    headers: {
+                        'Content-Type': [
+                            'application/json',  
+                            'charset=utf-8' 
+                        ]
+                    }
+                });
 
-        results.map(async results => (
-            earthquakeObject = {
-                place: results.properties.place,
-                time: results.properties.time,
-                updated: results.properties.updated,
-                tz: results.properties.tz,
-                url: results.properties.url,
-                detail: results.properties.detail,
-                felt: results.properties.felt,
-                cdi: results.properties.cdi,
-                alert: results.properties.alert,
-                status: results.properties.status,
-                tsunami: results.properties.tsunami,
-                sig: results.properties.sig,
-                net: results.properties.net,
-                code: results.properties.code,
-                sources: results.properties.sources,
-                nst: results.properties.nst,
-                dmin: results.properties.dmin,
-                rms: results.properties.rms,
-                mag: results.properties.mag,
-                magType: results.properties.magType,
-                type: results.properties.type,
-                latitude: results.geometry.coordinates[0],
-                longitude: results.geometry.coordinates[1],
-                location:
-                    { 
-                        lat: results.geometry.coordinates[1],
-                        lon: results.geometry.coordinates[0],
+                if (VIRUS) {
+                    console.log('Data Received!')
+                }
+                
+                results = VIRUS.data.features
+
+                console.log('Indexing All Data Into Elasticsearch')
+
+                results.map(async data => (
+                    virusObject = {
+                        OBJECTID: data.attributes.OBJECTID,
+                        Province_State: data.attributes.Province_State,
+                        Country_Region: data.attributes.Country_Region,
+                        Last_Update: data.attributes.Last_Update,
+                        Confirmed: data.attributes.Confirmed,
+                        Deaths: data.attributes.Deaths,
+                        Recovered: data.attributes.Recovered,
+                        Latitude: data.attributes.Lat,
+                        Longitude: data.attributes.Long_,
+                        Location:
+                            { 
+                                lat: data.attributes.Lat,
+                                lon: data.attributes.Long_
+                            }
                     },
-                depth: results.geometry.coordinates[2]
-            },
 
-            await client.index({ 
-                index: 'earthquakes',
-                id: results.id,
-                type: '_doc',
-                body: earthquakeObject
-            }), (err, resp, status) => {
-                console.log(resp);
-            }
-        ));
+                    await client.index({ 
+                        index: 'corona-virus',
+                        id: data.attributes.OBJECTID,
+                        type: '_doc',
+                        body: virusObject
+                    }), (err, res, status) => {
+                        console.log(res);
+                    }
+                ));
 
-        if (EARTHQUAKES.data.length > 0) {
-            indexAllDocs();
-        } else {
-            console.log('All Data Has Been Indexed!');
+                //console.log(virusObject)
+
+                if (VIRUS.data.length) {
+                    indexAllDocs();
+                } else {
+                    console.log('All Data Has Been Indexed!');
+                };
+            } catch (err) {
+                console.log(err)
+            };
+
+            console.log('Preparing For The Next Data Check...');
         };
-    } catch (err) {
-        console.log(err)
-    };
 
-    console.log('Preparing For The Next Data Check...');
-}
-
-
-//================== Official API Call ==================\\
-router.get('/earthquakes', function (req, res) {
-    res.send('Running Application...');
-    console.log('Loading Application...')
-    
-    setInterval(() => { 
         pingElasticsearch()
-        indexAllDocs(res);
-    }, 30000);
+        indexAllDocs()
+    }, 180000);
 });
- 
+
+
 module.exports = router;
