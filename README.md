@@ -23,6 +23,13 @@ git clone https://github.com/themarcusaurelius/coronaVirus.git
 npm install
 ```
 
+### Get Vizion Elasticsearch Credentials
+
+Go to: 
+```
+[Vizion.ai](https://app.vizion.ai)
+```
+
 
 
 
