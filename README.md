@@ -31,7 +31,7 @@ Go to:
 2. Create an account. 
 
  <p align="center">
-    <img src="https://giant.gfycat.com/FatalBelovedArabianoryx.gif">
+    <img src="https://giant.gfycat.com/misguideduncommonannelid.gif">
   </p>
 
 
