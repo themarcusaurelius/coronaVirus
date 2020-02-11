@@ -12,6 +12,13 @@ The dashboard is intended to provide the public with an understanding of the out
   <img src="https://i.imgur.com/pegZHkx.png">
 </p>
 
+
+### To Install:
+
+Markup: ``
+
+
+
 <p align="center">
   <img src="https://i.imgur.com/8BseA0C.png">
 </p>
