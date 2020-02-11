@@ -13,10 +13,17 @@ The dashboard is intended to provide the public with an understanding of the out
 </p>
 
 
-### To Install:
+### Download:
 ```
 git clone https://github.com/themarcusaurelius/coronaVirus.git
 ```
+
+### Install Dependencies
+```
+npm install
+```
+
+
 
 
 <p align="center">
