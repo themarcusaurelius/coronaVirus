@@ -31,7 +31,7 @@ Go to:
 2. Create an account. 
 
  <p align="center">
-    <img src="https://gfycat.com/misguideduncommonannelid.gif">
+    <img src="https://thumbs.gfycat.com/MisguidedUncommonAnnelid-mobile.mp4">
   </p>
 
 
