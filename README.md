@@ -22,15 +22,22 @@ Go to: [Vizion.ai](https://app.vizion.ai/)
   </p>
 
 
-### Download:
+### Download Application:
+In a Bash terminal run the following command:
+
 ```
 git clone https://github.com/themarcusaurelius/coronaVirus.git
 ```
 
+
 ### Install Dependencies:
+Cd into the directory and run the command:
+
 ```
 npm install
 ```
+
+### Open The Directory In A Code Editor
 
 <p align="center">
   <img src="https://i.imgur.com/pegZHkx.png">
