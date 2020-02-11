@@ -113,11 +113,7 @@ This will run a revolving check every two minutes for new data and will ingest i
 
 ## View The Dashboard In Kibana
 
-
-
-
-
-
+Back in Kibana, go to the <b>Dashboards</b> tab and click on the <b>Corona-Virus</b> dashboard to open it. You may need to change the <b>Time Range</b> To a longer period to include all the data that has been collected to get an accurate overall view of the ongoing outbreak situation, as well as the <b>Refresh Interval</b> to 5 seconds to always have an up-to-date-dashboard   
 
 
 <p align="center">
