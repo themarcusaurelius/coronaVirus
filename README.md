@@ -40,6 +40,22 @@ npm install
 ```
 
 ### Open The Directory In A Code Editor
+Create a file called 'config.js' in the root directory and add the following code substituting the API_ENPOINT with the Elasticsearh API Endpoint that was generated when you created your stack.
+
+```
+const config = {
+    Elasticsearch: {
+        API_ENDPOINT: 'YOUR_ELASTICSEARCH_API_ENDPOINT_GOES_HERE'
+    }
+}
+
+module.exports = config
+```
+
+<p align="center">
+  <img src="https://i.imgur.com/8BseA0C.png">
+</p>
+
 
 <p align="center">
   <img src="https://i.imgur.com/pegZHkx.png">
@@ -49,6 +65,4 @@ npm install
 
 
 
-<p align="center">
-  <img src="https://i.imgur.com/8BseA0C.png">
-</p>
+
