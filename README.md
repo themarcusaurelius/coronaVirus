@@ -29,7 +29,7 @@ Go to:
 - [Vizion.ai](https://app.vizion.ai/)
 
   1. Create a free account.
-  2. Select Elasticsearch from the Marketplace and follow through the process
+  2. Select Elasticsearch from the Marketplace and follow through the onboarding process
   3. Create a stack with a relevant name
   4. Copy and save the Credentials in a safe space!
 
