@@ -89,6 +89,9 @@ Go to: [Kibana](https://app.vizion.ai/kibana/app/my_login)
 
 
 ### Seed The Elasticsearch Database
+
+<b>Make Sure The Server Is Still Running</b>
+
 There are two different data sources included in this application. The first one is overall daily totals of confirmed cases. This one is updated daily once. To seed all <b>Totals</b> data up to the current day, open a broswer and go to the following link: 
 ```
 localhost:5002/api/data/virus-totals
