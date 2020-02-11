@@ -25,13 +25,12 @@ npm install
 
 ### Get Vizion Elasticsearch Credentials
 
-Go to: 
-- [Vizion.ai](https://app.vizion.ai/)
+Go to: [Vizion.ai](https://app.vizion.ai/)
 
-  1. Create a free account.
-  2. Select Elasticsearch from the Marketplace and follow through the onboarding process
-  3. Generate a stack with a relevant name
-  4. Copy and save the Credentials in a safe space!
+1. Create a free account.
+2. Select Elasticsearch from the Marketplace and follow through the onboarding process
+3. Generate a stack with a relevant name
+4. Copy and save the Credentials in a safe space!
 
  <p align="center">
     <img src="https://giant.gfycat.com/MisguidedUncommonAnnelid.gif">
