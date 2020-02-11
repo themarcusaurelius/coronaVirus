@@ -8,21 +8,6 @@ U.S. cases (confirmed, suspected, recovered, deaths) are taken from the U.S. CDC
 
 The dashboard is intended to provide the public with an understanding of the outbreak situation as it unfolds, with transparent data sources.
 
-<p align="center">
-  <img src="https://i.imgur.com/pegZHkx.png">
-</p>
-
-
-### Download:
-```
-git clone https://github.com/themarcusaurelius/coronaVirus.git
-```
-
-### Install Dependencies:
-```
-npm install
-```
-
 ### Get Vizion Elasticsearch Credentials
 
 Go to: [Vizion.ai](https://app.vizion.ai/)
@@ -35,6 +20,21 @@ Go to: [Vizion.ai](https://app.vizion.ai/)
  <p align="center">
     <img src="https://giant.gfycat.com/MisguidedUncommonAnnelid.gif">
   </p>
+
+
+### Download:
+```
+git clone https://github.com/themarcusaurelius/coronaVirus.git
+```
+
+### Install Dependencies:
+```
+npm install
+```
+
+<p align="center">
+  <img src="https://i.imgur.com/pegZHkx.png">
+</p>
 
 
 
