@@ -59,7 +59,7 @@ module.exports = config
 
 
 ### Start The Node.js Server
-Open a terminal in the code editor and run the following command:
+Open a terminal in the code editor and run the following command in the root directory:
 
 ```
 npm run server
