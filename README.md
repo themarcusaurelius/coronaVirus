@@ -8,6 +8,7 @@ U.S. cases (confirmed, suspected, recovered, deaths) are taken from the U.S. CDC
 
 The dashboard is intended to provide the public with an understanding of the outbreak situation as it unfolds, with transparent data sources.
 
+# How to use:
 
 ### Get Vizion Elasticsearch Credentials
 
