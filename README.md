@@ -23,6 +23,11 @@ Go to: [Vizion.ai](https://app.vizion.ai/)
     <img src="https://giant.gfycat.com/spiffyblindcobra.gif">
   </p>
   
+  <p align="center">
+    <img src="https://giant.gfycat.com/SpiffyBlindCobra.gif">
+  </p>
+  
+  
 
  
 
