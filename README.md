@@ -24,7 +24,7 @@ Go to: [Vizion.ai](https://app.vizion.ai/)
   </p>
   
 
-
+ 
 
 
 ### Download Application:
