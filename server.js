@@ -5,6 +5,7 @@ const path = require('path');
   
 //Import Routes Here
 const data = require('./routes/api/data')
+const totals = require('./routes/api/data2')
 
 const app = express(); 
 
@@ -26,6 +27,7 @@ app.use(formData.parse())
    
 //Define Routes
 app.use('/api/data', data);
+app.use('/api/data', totals);
 
  
 //Serve Static assets in production

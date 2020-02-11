@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios')
 const client = require('../../elasticsearch/connection');
-const URL = `https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Confirmed%20desc%2CCountry_Region%20asc%2CProvince_State%20asc&resultOffset=0&resultRecordCount=250&cacheHint=true`;
+const URL = `https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/cases_time_v2/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Report_Date_String%20asc&outSR=102100&resultOffset=0&resultRecordCount=2000&cacheHint=true`
 
 //======= API ROUTE =======\\
-router.get('/virus', function (req, res) {
+router.get('/virus-totals', function (req, res) {
     res.send('Running Application...');
     console.log('Loading Application...')
 
-    setInterval(() => { 
+    // setInterval(() => { 
         //======= Check that Elasticsearch is up and running =======\\
         pingElasticsearch = async () => {
             await client.ping({
@@ -38,36 +38,35 @@ router.get('/virus', function (req, res) {
                 });
 
                 if (VIRUS) {
-                    console.log('Data Received!')
+                    console.log('Totals Data Received!')
                 }
-                
+
                 results = VIRUS.data.features
 
-                console.log('Indexing All Data Into Elasticsearch')
+                //console.log(results)
+
+                console.log('Indexing All Totals Data Into Elasticsearch')
 
                 //==== Map through the data to create a new custom data object ====\\
                 results.map(async data => (
                     virusObject = {
-                        OBJECTID: data.attributes.OBJECTID,
-                        Province_State: data.attributes.Province_State,
-                        Country_Region: data.attributes.Country_Region,
-                        Last_Update: data.attributes.Last_Update,
-                        Confirmed: data.attributes.Confirmed,
-                        Deaths: data.attributes.Deaths,
-                        Recovered: data.attributes.Recovered,
-                        Latitude: data.attributes.Lat,
-                        Longitude: data.attributes.Long_,
-                        Location:
-                            { 
-                                lat: data.attributes.Lat,
-                                lon: data.attributes.Long_
-                            }
+                        OBJECTID: data.attributes.ObjectId,
+                        Mainland_China: data.attributes.Mainland_China,
+                        Other_Locations: data.attributes.Other_Locations,
+                        Report_Date: data.attributes.Report_Date,
+                        Total_Confirmed: data.attributes.Total_Confirmed,
+                        //Total_Deaths: data.attributes.Total_Deaths,
+                        Total_Recovered: data.attributes.Total_Recovered,
+                        Report_Date_String: data.attributes.Report_Date_String
+                     
                     },
+
+                    //console.log(virusObject),
 
                     //==== Index the custom data objects into Elasticsearh ====\\
                     await client.index({ 
-                        index: 'corona-virus',
-                        id: data.attributes.OBJECTID,
+                        index: 'corona-virus-totals',
+                        id: data.attributes.ObjectId,
                         type: '_doc',
                         body: virusObject
                     }), (err, res, status) => {
@@ -75,23 +74,21 @@ router.get('/virus', function (req, res) {
                     }
                 ));
 
-                //console.log(virusObject)
-
                 if (VIRUS.data.length) {
                     indexAllDocs();
                 } else {
-                    console.log('All Data Has Been Indexed!');
+                    console.log('All Totals Data Has Been Indexed!');
                 };
             } catch (err) {
                 console.log(err)
             };
 
-            console.log('Preparing For The Next Data Check...');
+            //console.log('Preparing For The Next Data Check...');
         };
 
         pingElasticsearch()
         indexAllDocs()
-    }, 180000);
+    // }, 180000);
 });
 
 module.exports = router;
