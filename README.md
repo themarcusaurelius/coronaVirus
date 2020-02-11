@@ -76,7 +76,11 @@ Go to: [Kibana](https://app.vizion.ai/kibana/app/my_login)
 3. Import the <b>kibana.json</b> file located in the root directory of your project folder.
 
 <p align="center">
-  <img src="https://i.imgur.com/ejX1Rr4.pngg">
+  <img src="https://i.imgur.com/ejX1Rr4.png">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/0GU0CiG.png">
 </p>
 
 
