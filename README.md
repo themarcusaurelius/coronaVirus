@@ -104,7 +104,14 @@ In your terminal you will see the following messages if everything was uploaded 
   <img src="https://i.imgur.com/PYLb5Cb.png">
 </p>
 
+Now, It is time to run the recurring data ingestion. In the broswer, as before, enter the following"
+```
+http://localhost:5002/api/data/virus
+```
 
+This will run a revolving check every two minutes for new data and will ingest it into Elasticsearch automatically as long as the server is running. You can watch in the terminal in real-time every two minutes for the data check. 
+
+## View The Dashboard In Kibana
 
 
 
@@ -116,6 +123,9 @@ In your terminal you will see the following messages if everything was uploaded 
 <p align="center">
   <img src="https://i.imgur.com/pegZHkx.png">
 </p>
+
+
+
 
 
 
