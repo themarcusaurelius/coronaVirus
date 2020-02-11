@@ -30,7 +30,9 @@ Go to:
 
 2. Create an account. 
 
-<iframe src="https://drive.google.com/file/d/1-xXfF18NWL4aMLtnSORxSSDUQMYGvG1y/preview" width="640" height="480"></iframe>
+ <p align="center">
+    <img src="https://gfycat.com/misguideduncommonannelid.gif">
+  </p>
 
 
 
