@@ -8,6 +8,7 @@ U.S. cases (confirmed, suspected, recovered, deaths) are taken from the U.S. CDC
 
 The dashboard is intended to provide the public with an understanding of the outbreak situation as it unfolds, with transparent data sources.
 
+
 ### Get Vizion Elasticsearch Credentials
 
 Go to: [Vizion.ai](https://app.vizion.ai/)
@@ -22,6 +23,7 @@ Go to: [Vizion.ai](https://app.vizion.ai/)
   </p>
 
 
+
 ### Download Application:
 In a Bash terminal run the following command:
 
@@ -31,7 +33,7 @@ git clone https://github.com/themarcusaurelius/coronaVirus.git
 
 
 ### Install Dependencies:
-Cd into the directory and run the command:
+CD into the directory and run the command:
 
 ```
 npm install
