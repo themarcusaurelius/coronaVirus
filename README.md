@@ -67,6 +67,10 @@ Open a terminal in the code editor and run the following command in the root dir
 ```
 npm run server
 ```
+<p align="center">
+  <img src="https://i.imgur.com/Jg4L1Bx.png">
+</p>
+
 
 ### Upload Dashboard and Visuals to Kibana
 Go to: [Kibana](https://app.vizion.ai/kibana/app/my_login)
@@ -83,12 +87,6 @@ Go to: [Kibana](https://app.vizion.ai/kibana/app/my_login)
   <img src="https://i.imgur.com/0GU0CiG.png">
 </p>
 
-
-
-
-<p align="center">
-  <img src="https://i.imgur.com/Jg4L1Bx.png">
-</p>
 
 
 
