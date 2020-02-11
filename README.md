@@ -18,7 +18,7 @@ The dashboard is intended to provide the public with an understanding of the out
 git clone https://github.com/themarcusaurelius/coronaVirus.git
 ```
 
-### Install Dependencies
+### Install Dependencies:
 ```
 npm install
 ```
