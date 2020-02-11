@@ -14,9 +14,9 @@ The dashboard is intended to provide the public with an understanding of the out
 
 
 ### To Install:
-
-`git clone https://github.com/themarcusaurelius/coronaVirus.git`
-
+```
+git clone https://github.com/themarcusaurelius/coronaVirus.git
+```
 
 
 <p align="center">
