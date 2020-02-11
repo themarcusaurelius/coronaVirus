@@ -58,6 +58,27 @@ module.exports = config
 </p>
 
 
+### Start The Node.js Server
+Open a terminal in the code editor and run the following command:
+
+```
+npm run server
+```
+<p align="center">
+  <img src="https://i.imgur.com/Jg4L1Bx.png">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center">
   <img src="https://i.imgur.com/pegZHkx.png">
 </p>
