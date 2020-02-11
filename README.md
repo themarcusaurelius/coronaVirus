@@ -44,7 +44,7 @@ npm install
 ```
 
 ### Open The Directory In A Code Editor
-Create a file called 'config.js' in the root directory and add the following code substituting the API_ENPOINT with the Elasticsearh API Endpoint that was generated when you created your stack. Save.
+Create a file called 'config.js' in the root directory and add the following code substituting the 'API_ENDPOINT' with the Elasticsearh API Endpoint that was generated when you created your stack. Save.
 
 ```
 const config = {
