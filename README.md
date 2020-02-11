@@ -76,7 +76,7 @@ npm run server
 Go to: [Kibana](https://app.vizion.ai/kibana/app/my_login)
 
 1. Enter the <b>Username</b> and <b>Password</b> that was generated when you created your stack
-2. click on the <b>Management</b> tab and then click on <b>Saved Objects</b>
+2. Click on the <b>Management</b> tab and then click on <b>Saved Objects</b>
 3. Import the <b>kibana.json</b> file located in the root directory of your project folder.
 
 <p align="center">
