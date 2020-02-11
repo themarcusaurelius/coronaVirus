@@ -64,6 +64,13 @@ Open a terminal in the code editor and run the following command in the root dir
 ```
 npm run server
 ```
+
+### Upload Dashboard and Visuals to Kibana
+Go to: [Kibana](https://app.vizion.ai/kibana/app/my_login)
+
+1. Enter the <b>Username</b> and Password
+
+
 <p align="center">
   <img src="https://i.imgur.com/Jg4L1Bx.png">
 </p>
