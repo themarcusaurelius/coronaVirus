@@ -30,7 +30,7 @@ Go to:
 
   1. Create a free account.
   2. Select Elasticsearch from the Marketplace and follow through the onboarding process
-  3. Create a stack with a relevant name
+  3. Generate a stack with a relevant name
   4. Copy and save the Credentials in a safe space!
 
  <p align="center">
