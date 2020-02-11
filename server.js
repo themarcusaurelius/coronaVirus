@@ -2,7 +2,6 @@ const express = require('express');
 const formData = require('express-form-data');
 const client = require('./elasticsearch/connection');
 const path = require('path');
-require('dotenv').config()
 
 //Import Routes Here
 const data = require('./routes/api/data')

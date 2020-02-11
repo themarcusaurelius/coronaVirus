@@ -1,0 +1,335 @@
+[
+  {
+    "_id": "e279b6f0-4610-11ea-a23e-f7bd88587e41",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Corona Virus",
+      "hits": 0,
+      "description": "The case data visualized is collected from various sources, including WHO, U.S. CDC, ECDC, China CDC (CCDC), NHC, and DXY. \n\nDXY is a Chinese website that aggregates NHC and local CCDC situation reports in near real-time, providing more current regional case estimates than the national level reporting organizations are capable of, and is thus used for all the mainland China cases reported in our dashboard (confirmed, suspected, recovered, deaths). \n\nU.S. cases (confirmed, suspected, recovered, deaths) are taken from the U.S. CDC, and all other country (suspected and confirmed) case data is taken from the corresponding regional health departments. \n\nThe dashboard is intended to provide the public with an understanding of the outbreak situation as it unfolds, with transparent data sources.",
+      "panelsJSON": "[{\"embeddableConfig\":{\"mapCenter\":[22.59372606392931,21.621093750000004],\"mapZoom\":2},\"gridData\":{\"x\":22,\"y\":18,\"w\":26,\"h\":21,\"i\":\"1\"},\"id\":\"79e715b0-4610-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":39,\"w\":17,\"h\":13,\"i\":\"2\"},\"id\":\"b92082e0-4613-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":17,\"y\":39,\"w\":17,\"h\":13,\"i\":\"4\"},\"id\":\"39ea9e70-4640-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":18,\"w\":22,\"h\":21,\"i\":\"5\"},\"id\":\"c527e590-4647-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":27,\"y\":52,\"w\":21,\"h\":16,\"i\":\"6\"},\"id\":\"4aaa5d10-4648-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":31,\"h\":6,\"i\":\"8\"},\"id\":\"ab670120-4694-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":6,\"w\":13,\"h\":12,\"i\":\"9\"},\"id\":\"3c117570-4695-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{\"vis\":{\"colors\":{\"Confirmed\":\"#806EB7\",\"Deaths\":\"#BF1B00\",\"Recovered\":\"#9AC48A\"}}},\"gridData\":{\"x\":0,\"y\":52,\"w\":27,\"h\":16,\"i\":\"10\"},\"id\":\"74506fd0-46cd-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":86,\"w\":48,\"h\":18,\"i\":\"12\"},\"id\":\"7e318610-460f-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"12\",\"type\":\"search\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{\"mapZoom\":5,\"mapCenter\":[30.221101852485987,104.04052734375]},\"gridData\":{\"x\":0,\"y\":68,\"w\":48,\"h\":18,\"i\":\"13\"},\"id\":\"ec9e69f0-46d3-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{\"vis\":{\"colors\":{\"Deaths\":\"#F2C96D\",\"Recovered\":\"#1F78C1\"},\"legendOpen\":true}},\"gridData\":{\"x\":34,\"y\":39,\"w\":14,\"h\":13,\"i\":\"14\"},\"id\":\"ab7e3080-4832-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"14\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":31,\"y\":0,\"w\":17,\"h\":6,\"i\":\"15\"},\"id\":\"a825c120-49bb-11ea-a23e-f7bd88587e41\",\"panelIndex\":\"15\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"gridData\":{\"x\":13,\"y\":6,\"w\":35,\"h\":12,\"i\":\"16\"},\"version\":\"6.5.4\",\"panelIndex\":\"16\",\"type\":\"visualization\",\"id\":\"50cd0b40-4baa-11ea-a23e-f7bd88587e41\",\"embeddableConfig\":{}}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b50ba5a0-460d-11ea-a23e-f7bd88587e41",
+    "_type": "index-pattern",
+    "_source": {
+      "title": "corona-virus*",
+      "timeFieldName": "Last_Update",
+      "fields": "[{\"name\":\"Confirmed\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Country_Region\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"Country_Region.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Deaths\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Last_Update\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Latitude\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Location\",\"type\":\"geo_point\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Longitude\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"OBJECTID\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Province_State\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"Province_State.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Recovered\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false}]"
+    }
+  },
+  {
+    "_id": "c66bc810-4ba9-11ea-a23e-f7bd88587e41",
+    "_type": "index-pattern",
+    "_source": {
+      "title": "corona-virus-totals*",
+      "timeFieldName": "Report_Date",
+      "fields": "[{\"name\":\"Mainland_China\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"OBJECTID\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Other_Locations\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Report_Date\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Report_Date_String\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Total_Confirmed\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Total_Recovered\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false}]"
+    }
+  },
+  {
+    "_id": "7e318610-460f-11ea-a23e-f7bd88587e41",
+    "_type": "search",
+    "_source": {
+      "title": "Corona Virus",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Province_State",
+        "Country_Region",
+        "Confirmed",
+        "Deaths",
+        "Recovered"
+      ],
+      "sort": [
+        "Last_Update",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "e639b800-4ba9-11ea-a23e-f7bd88587e41",
+    "_type": "search",
+    "_source": {
+      "title": "Virus-Totals",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Mainland_China",
+        "Other_Locations",
+        "Total_Confirmed",
+        "Total_Recovered"
+      ],
+      "sort": [
+        "Report_Date",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c66bc810-4ba9-11ea-a23e-f7bd88587e41\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "d2083a60-463f-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Deaths",
+      "visState": "{\"title\":\"Virus - Deaths\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Deaths\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Country_Region.keyword\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "ea30c750-46bd-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - China Provinces",
+      "visState": "{\"title\":\"Virus - China Provinces\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Max Confirmed\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Max Confirmed\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Province_State.keyword\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"Country_Region\",\"value\":\"Mainland China\",\"params\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"Country_Region\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "c527e590-4647-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Chart",
+      "visState": "{\"title\":\"Virus - Chart\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Locations\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"Province_State.keyword\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"-\",\"customLabel\":\"Province\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"Country_Region.keyword\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Country\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"Confirmed\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Confirmed Cases\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"Deaths\",\"size\":2000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Deaths\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"Recovered\",\"size\":2000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Recovered\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "3c117570-4695-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Dropdown",
+      "visState": "{\"title\":\"Virus - Dropdown\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1580741548979\",\"indexPattern\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"fieldName\":\"Country_Region.keyword\",\"parent\":\"\",\"label\":\"Country\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":100,\"order\":\"desc\"}},{\"id\":\"1580741664729\",\"indexPattern\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"fieldName\":\"Province_State.keyword\",\"parent\":\"\",\"label\":\"Province/State\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":900,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false,\"useTimeFilter\":false,\"pinFilters\":false},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "df8d6e60-46be-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Confirmed Chinese Provinces",
+      "visState": "{\"title\":\"Virus - Confirmed Chinese Provinces\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":null},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100,\"rotate\":0},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Max Confirmed\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Confirmed\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"stacked\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Deaths\"},\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"normal\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"4\",\"label\":\"Recovered\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"orderBucketsBySum\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\",\"customLabel\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Province_State.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Top 20 Chinese Provinces\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"Deaths\",\"customLabel\":\"Deaths\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"Recovered\",\"customLabel\":\"Recovered\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"Country_Region\",\"value\":\"Mainland China\",\"params\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"Country_Region\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "8bdea550-464a-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Latest Updates Bar",
+      "visState": "{\"title\":\"Virus - Latest Updates Bar\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Latest Updates\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Latest Updates\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Latest Updates\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"Last_Update\",\"timeRange\":{\"from\":\"now-7d\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"time_zone\":\"America/Chicago\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Latest Updates\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b92082e0-4613-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Confirmed Cases",
+      "visState": "{\"title\":\"Virus - Confirmed Cases\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Country_Region.keyword\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Australia\":\"#E24D42\",\"Mainland China\":\"#EA6460\"},\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "79e715b0-4610-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Map",
+      "visState": "{\"title\":\"Virus - Map\",\"type\":\"tile_map\",\"params\":{\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"heatClusterSize\":1,\"isDesaturated\":true,\"legendPosition\":\"bottomleft\",\"mapCenter\":[0,0],\"mapType\":\"Shaded Circle Markers\",\"mapZoom\":2,\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true},\"selectedTmsLayer\":{\"attribution\":\"<p>&#169; <a href=\\\"https://www.openstreetmap.org/copyright\\\">OpenStreetMap contributors</a>|<a href=\\\"https://openmaptiles.org\\\">OpenMapTiles</a>|<a href=\\\"https://www.maptiler.com\\\">MapTiler</a>|<a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"id\":\"road_map\",\"maxZoom\":10,\"minZoom\":0,\"subdomains\":[],\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.5.4\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"Location\",\"autoPrecision\":true,\"isFilteredByCollar\":true,\"useGeocentroid\":true,\"mapZoom\":3,\"mapCenter\":{\"lon\":34.45312500000001,\"lat\":6.926426847059551},\"precision\":2}}]}",
+      "uiStateJSON": "{\"mapZoom\":3,\"mapCenter\":[18.895892559415024,-24.082031250000004]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "ec9e69f0-46d3-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Heat Map",
+      "visState": "{\"title\":\"Virus - Heat Map\",\"type\":\"tile_map\",\"params\":{\"colorSchema\":\"Reds\",\"mapType\":\"Heatmap\",\"isDesaturated\":true,\"addTooltip\":true,\"heatClusterSize\":2,\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true,\"layers\":\"OSM-WMS\",\"version\":\"1.3.0\"},\"selectedTmsLayer\":{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.5.4\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"https://www.openstreetmap.org/copyright\\\">OpenStreetMap contributors</a>|<a href=\\\"https://openmaptiles.org\\\">OpenMapTiles</a>|<a href=\\\"https://www.maptiler.com\\\">MapTiler</a>|<a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]},\"url\":\"https://ows.terrestris.de/osm/service?\"}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\",\"customLabel\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"Location\",\"autoPrecision\":true,\"isFilteredByCollar\":true,\"useGeocentroid\":true,\"mapZoom\":5,\"mapCenter\":{\"lon\":109.77539062500001,\"lat\":29.70713934813417},\"precision\":3}}]}",
+      "uiStateJSON": "{\"mapZoom\":5,\"mapCenter\":[29.697596502283215,109.77539062500001]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "e4b25080-46ce-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Deaths Bar",
+      "visState": "{\"title\":\"Virus - Deaths Bar\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100,\"rotate\":0},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Deaths\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"area\",\"mode\":\"stacked\",\"data\":{\"label\":\"Deaths\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"cardinal\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Deaths\",\"customLabel\":\"Deaths\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Country_Region.keyword\",\"size\":3,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Deaths\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Max Deaths\":\"#E24D42\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "ab670120-4694-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Counts",
+      "visState": "{\"title\":\"Virus - Counts\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":30}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\",\"customLabel\":\"Total Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Deaths\",\"customLabel\":\"Total Deaths\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Recovered\",\"customLabel\":\"Total Recovered\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"Country_Region.keyword\",\"customLabel\":\"Total Countries Confirmed\"}},{\"id\":\"5\",\"enabled\":false,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"Last_Update\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"Last_Update\",\"sortOrder\":\"desc\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "a825c120-49bb-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Last Updated",
+      "visState": "{\"title\":\"Virus - Last Updated\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":25}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"Last_Update\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"Last_Update\",\"sortOrder\":\"desc\",\"customLabel\":\"Last Updated\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4aaa5d10-4648-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Countries Tag",
+      "visState": "{\"title\":\"Virus - Countries Tag\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72,\"showLabel\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Country_Region.keyword\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Countries\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "74506fd0-46cd-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Top China Provinces",
+      "visState": "{\"title\":\"Virus - Top China Provinces\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Confirmed\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Confirmed\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"stacked\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Deaths\"},\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"stacked\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"4\",\"label\":\"Recovered\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\",\"customLabel\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Province_State.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Provinces\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"Deaths\",\"customLabel\":\"Deaths\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"Recovered\",\"customLabel\":\"Recovered\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Recovered\":\"#9AC48A\",\"Confirmed\":\"#806EB7\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"Country_Region\",\"value\":\"Mainland China\",\"params\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"Country_Region\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "39ea9e70-4640-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Confirmed Outside Of China",
+      "visState": "{\"title\":\"Virus - Confirmed Outside Of China\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":true,\"values\":true,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Country_Region.keyword\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Country\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"Country_Region\",\"value\":\"Mainland China\",\"params\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"Country_Region\":{\"query\":\"Mainland China\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "50cd0b40-4baa-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Total Confirmed Line ",
+      "visState": "{\"title\":\"Virus - Total Confirmed Line \",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Confirmed\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Total Mainland China Confirmed\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"cardinal\"},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Total Other Locations Confirmed\"},\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"4\",\"label\":\"Total Recovered\"},\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"5\",\"label\":\"Total Confirmed\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Mainland_China\",\"customLabel\":\"Total Mainland China Confirmed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"Report_Date\",\"timeRange\":{\"from\":\"now-23d\",\"to\":\"now\",\"mode\":\"relative\"},\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"time_zone\":\"America/Chicago\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Other_Locations\",\"customLabel\":\"Total Other Locations Confirmed\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Total_Recovered\",\"customLabel\":\"Total Recovered\"}},{\"id\":\"5\",\"enabled\":false,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Total_Confirmed\",\"customLabel\":\"Total Confirmed\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Total Mainland China Confirmed\":\"#E24D42\",\"Total Recovered\":\"#9AC48A\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c66bc810-4ba9-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "ab7e3080-4832-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - Deaths vs. Recovered",
+      "visState": "{\"title\":\"Virus - Deaths vs. Recovered\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100,\"rotate\":0},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Counts\"}}],\"seriesParams\":[{\"show\":true,\"mode\":\"normal\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"2\",\"label\":\"Deaths\"},\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"stacked\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Recovered\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Deaths\",\"customLabel\":\"Deaths\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Recovered\",\"customLabel\":\"Recovered\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b80b2780-4c43-11ea-a23e-f7bd88587e41",
+    "_type": "visualization",
+    "_source": {
+      "title": "Virus - U.S. Map",
+      "visState": "{\"title\":\"Virus - U.S. Map\",\"type\":\"tile_map\",\"params\":{\"colorSchema\":\"Yellow to Red\",\"mapType\":\"Heatmap\",\"isDesaturated\":true,\"addTooltip\":true,\"heatClusterSize\":1,\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true},\"selectedTmsLayer\":{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.5.4\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"https://www.openstreetmap.org/copyright\\\">OpenStreetMap contributors</a>|<a href=\\\"https://openmaptiles.org\\\">OpenMapTiles</a>|<a href=\\\"https://www.maptiler.com\\\">MapTiler</a>|<a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"Location\",\"autoPrecision\":true,\"isFilteredByCollar\":true,\"useGeocentroid\":true,\"mapZoom\":5,\"mapCenter\":{\"lon\":-98.17382812500001,\"lat\":38.685509760012025},\"precision\":3}}]}",
+      "uiStateJSON": "{\"mapZoom\":5,\"mapCenter\":[38.685509760012025,-98.17382812500001]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b50ba5a0-460d-11ea-a23e-f7bd88587e41\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  }
+]
