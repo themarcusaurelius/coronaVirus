@@ -1,5 +1,5 @@
 # coronaVirus
 
 <p align="center">
-  <img src="https://imgur.com/a/2Qccp7g">
+  <img src="https://i.imgur.com/pegZHkx.png">
 </p>
