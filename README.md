@@ -26,7 +26,11 @@ npm install
 ### Get Vizion Elasticsearch Credentials
 
 Go to: 
-[Vizion.ai](https://app.vizion.ai/)
+1. [Vizion.ai](https://app.vizion.ai/)
+
+2. Create an account. 
+
+<iframe src="https://drive.google.com/file/d/1-xXfF18NWL4aMLtnSORxSSDUQMYGvG1y/preview" width="640" height="480"></iframe>
 
 
 
