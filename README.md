@@ -144,7 +144,7 @@ PUT corona-virus-totals
 ```
 
 Create the 2nd index mappings:
-```
+```json
 PUT corona-virus-totals/_mappings/_doc 
 {
   "properties": {
