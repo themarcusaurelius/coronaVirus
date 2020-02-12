@@ -84,7 +84,7 @@ PUT corona-virus
 ```
 
 Create the 1st index mappings:
-```
+```json
 PUT corona-virus/_mappings/_doc 
 {
   "properties" : {
