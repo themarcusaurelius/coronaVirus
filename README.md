@@ -218,6 +218,8 @@ http://localhost:5002/api/data/virus
 
 This will run a revolving check every two minutes for new data and will ingest it into Elasticsearch automatically as long as the server is running. You can watch in the terminal in real-time every two minutes for the data check. 
 
+<b>Note:</b> This one will take a few minutes to begin populating data into Elasticsearch.
+
 ## View The Dashboard In Kibana
 
 Back in Kibana, go to the <b>Dashboards</b> tab and click on the <b>Corona-Virus</b> dashboard to open it. You may need to change the <b>Time Range</b> To a longer period to include all the data that has been collected to get an accurate overall view of the ongoing outbreak situation, as well as the <b>Refresh Interval</b> to 5 seconds to always have an up-to-date-dashboard.
