@@ -71,13 +71,117 @@ npm run server
   <img src="https://i.imgur.com/Jg4L1Bx.png">
 </p>
 
-
-### Upload Dashboard and Visuals to Kibana
+### Create Mapping Types For Data
 Go to: [Kibana](https://app.vizion.ai/kibana/app/my_login)
 
 1. Enter the <b>Username</b> and <b>Password</b> that was generated when you created your stack
-2. Click on the <b>Management</b> tab and then click on <b>Saved Objects</b>
-3. Import the <b>kibana.json</b> file located in the root directory of your project folder.
+2. Click on the <b>DevTools</b> tab.
+
+Create the 1st index:
+
+```
+PUT corona-virus
+```
+
+Create the 1st index mappings:
+```
+PUT corona-virus/_mappings/_doc 
+{
+  "properties" : {
+    "Confirmed" : {
+      "type" : "long"
+    },
+    "Country_Region" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "Deaths" : {
+      "type" : "long"
+    },
+    "Last_Update" : {
+      "type" : "date"
+    },
+    "Latitude" : {
+      "type" : "float"
+    },
+    "Location" : {
+      "type" : "geo_point"
+    },
+    "Longitude" : {
+      "type" : "float"
+    },
+    "OBJECTID" : {
+      "type" : "long"
+    },
+    "Province_State" : {
+      "type" : "text",
+      "fields" : {
+        "keyword" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        }
+      }
+    },
+    "Recovered" : {
+      "type" : "long"
+    }
+  }
+}
+```
+
+<p align="center">
+  <img src="https://i.imgur.com/eTWkOd0.png">
+</p>
+
+Create the 2nd index:
+```
+PUT corona-virus-totals
+```
+
+Create the 2nd index mappings:
+```
+PUT corona-virus-totals/_mappings/_doc 
+{
+  "properties": {
+    "Last_Update": {
+      "type": "date"
+    },
+    "Mainland_China" : {
+      "type" : "long"
+    },
+    "OBJECTID" : {
+      "type" : "long"
+    },
+    "Other_Locations" : {
+      "type" : "long"
+    },
+    "Report_Date" : {
+      "type" : "date",
+      "ignore_malformed" : true
+    },
+    "Report_Date_String" : {
+      "type" : "date",
+      "format" : "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
+    },
+    "Total_Confirmed" : {
+      "type" : "long"
+    },
+    "Total_Recovered" : {
+      "type" : "long"
+    }
+  }
+}
+```
+
+
+### Upload Dashboard and Visuals to Kibana
+1. Click on the <b>Management</b> tab and then click on <b>Saved Objects</b>
+2. Import the <b>kibana.json</b> file located in the root directory of your project folder.
 
 <p align="center">
   <img src="https://i.imgur.com/ejX1Rr4.png">
