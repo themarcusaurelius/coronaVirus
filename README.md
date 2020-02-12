@@ -206,7 +206,7 @@ Hit enter and the data will be sent up to Elasticsearch:
   <img src="https://i.imgur.com/2aoANI4.png">
 </p>
 
-In your terminal you will see the following messages if everything was uploaded successfully:
+In your terminal you will see the following messages if everything was indexed into Elasticsearch successfully:
 <p align="center">
   <img src="https://i.imgur.com/PYLb5Cb.png">
 </p>
