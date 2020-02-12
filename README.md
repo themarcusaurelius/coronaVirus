@@ -46,7 +46,7 @@ npm install
 ### Open The Directory In A Code Editor
 Create a file called 'config.js' in the root directory and add the following code substituting the 'API_ENDPOINT' with the Elasticsearh API Endpoint that was generated when you created your stack. Save.
 
-```
+```javascript
 const config = {
     Elasticsearch: {
         API_ENDPOINT: 'YOUR_ELASTICSEARCH_API_ENDPOINT_GOES_HERE'
