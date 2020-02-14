@@ -8,6 +8,8 @@ U.S. cases (confirmed, suspected, recovered, deaths) are taken from the U.S. CDC
 
 The dashboard is intended to provide the public with an understanding of the outbreak situation as it unfolds, with transparent data sources.
 
+[Public Dashboard](https://app.vizion.ai/kibanareadonly/app/kibana/dashboard?auth=f38a0a4a589f5694dcd0f508a2473f2c6e44d245e4753186a5ec5dfda77564ec83b57840590e66e2aa1da41683dec8078f2ceb20ee58c1d6bb36fb1eefbd9d33&objectId=6f815ce0-4f23-11ea-94f5-2de448464c8e#/dashboard/6f815ce0-4f23-11ea-94f5-2de448464c8e)
+
 # How to use:
 
 ### Get Vizion Elasticsearch Credentials
