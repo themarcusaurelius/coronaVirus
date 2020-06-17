@@ -21,9 +21,9 @@ Go to: [Vizion.ai](https://app.vizion.ai/)
 3. Generate a stack with a relevant name
 4. Copy and save the Credentials in a safe space!
 
-  <p align="center">
-    <img src="https://giant.gfycat.com/SpiffyBlindCobra.gif">
-  </p>
+<p align="center">
+  <img src="https://giant.gfycat.com/SpiffyBlindCobra.gif">
+</p>
   
   
 
